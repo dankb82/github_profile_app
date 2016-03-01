@@ -3,5 +3,7 @@ class RepositoriesController < ApplicationController
   end
 
   def show
+    r = Repository.new("dankb82")
+    render json: r
   end
 end
