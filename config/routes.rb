@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'repositories/ask'
+
+  get 'repositories/show'
+
   get 'form/new'
 
   get 'form/create'
