@@ -4,6 +4,6 @@ class RepositoriesController < ApplicationController
 
   def show
     r = Repository.new("dankb82")
-    render json: r
+    render json: r.repo_name
   end
 end
