@@ -5,6 +5,5 @@ class RepositoriesController < ApplicationController
   def show
     @username = params[:username]
     @user = Repository.new(@username)
-    render json: @user
   end
 end
