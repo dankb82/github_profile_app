@@ -3,6 +3,8 @@ class RepositoriesController < ApplicationController
   end
 
   def show
-    # Repository.new(params [:username])
+    @username = params[:username]
+    @user = Repository.new(@username)
+    render json: @user
   end
 end
