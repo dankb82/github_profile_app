@@ -12,9 +12,9 @@ class Repository
     names
   end
 
-  # def description
-  #   descriptions = []
-  #   @user.map { |r| description << r["description"]}
-  #   descriptions
-  # end
+  def description
+    descriptions = []
+    @user.map { |r| descriptions << r["description"]}
+    descriptions
+  end
 end

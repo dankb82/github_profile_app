@@ -10,6 +10,5 @@ class RepositoryTest < ActiveSupport::TestCase
     r = Repository.new("masonfmatthews")
     assert_equal 14, r.description.count
     assert_equal "Graph-based student evaluation system", r.description.first
-
   end
 end
