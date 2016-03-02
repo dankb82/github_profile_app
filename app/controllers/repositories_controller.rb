@@ -3,7 +3,6 @@ class RepositoriesController < ApplicationController
   end
 
   def show
-    r = Repository.new("masonfmatthews")
-    render json: r
+    # Repository.new(params [:username])
   end
 end
