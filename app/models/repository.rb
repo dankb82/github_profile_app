@@ -8,7 +8,13 @@ class Repository
 
   def repo_name
     names = []
-    @user.map { |r| names << r['name'] }
+    @user.map { |r| names << r["name"] }
     names
   end
+
+  # def description
+  #   descriptions = []
+  #   @user.map { |r| description << r["description"]}
+  #   descriptions
+  # end
 end
