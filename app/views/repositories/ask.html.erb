@@ -1,7 +1,7 @@
 <h1>Enter username</h1>
 
 
-<%= form_tag do %>
+<%= form_tag repositories_show_path do %>
   <%= text_field_tag :username %>
   <%= button_tag "Get that Git!" %>
 <% end %>
