@@ -14,7 +14,13 @@ class Repository
 
   def description
     descriptions = []
-    @user.map { |r| descriptions << r["description"]}
+    @user.map { |r| descriptions << r["description"] }
     descriptions
+  end
+
+  def profile_pic
+    pic_urls = []
+    @user.map { |u| pic_urls << u["avatar_url"] }
+    pic_urls
   end
 end
